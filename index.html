@@ -67,12 +67,12 @@
     </div>
     <div class="contactForm">
       <h2>Get in touch</h2>
-      <form action="mailto:contact@ferreiracode.com" method="post" enctype="text/plain">
+      <form action="https://formsubmit.co/contact@ferreiracode.com" method="POST">
         <div class="userInfo">
-          <input id="name" type="text" placeholder="Name" name="Name">
-          <input id="email" type="text" placeholder="E-mail" name="Email">
+          <input id="name" type="text" placeholder="Name" name="name" required>
+          <input id="email" type="email" placeholder="E-mail" name="email" required>
         </div>
-        <textarea name="Message" id="message" rows="8" placeholder="Your message"></textarea>
+        <textarea name="message" id="message" rows="8" placeholder="Your message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
