@@ -67,10 +67,10 @@
     </div>
     <div class="contactForm">
       <h2>Get in touch</h2>
-      <form>
+      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
         <div class="userInfo">
-          <input id="name" type="text" placeholder="Name">
-          <input id="email" type="text" placeholder="E-mail">
+          <input id="name" type="text" placeholder="Name" name="Name">
+          <input id="email" type="text" placeholder="E-mail" name="Email">
         </div>
         <textarea name="Message" id="message" rows="8" placeholder="Your message"></textarea>
         <button type="submit">Send Message</button>
