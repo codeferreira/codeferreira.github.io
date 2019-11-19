@@ -242,6 +242,7 @@
 
 .mobile header img {
   max-width: 160px;
+  margin: auto;
 }
 
 .mobile .home {
