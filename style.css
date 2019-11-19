@@ -242,7 +242,6 @@
 
 .mobile header img {
   max-width: 160px;
-  margin: auto;
 }
 
 .mobile .home {
@@ -410,6 +409,7 @@
 
 .mobile input {
   padding: 16px; 
+  font-size: 20px;
   width: 100%;
   background: #E2E1DE;
   border: 2px solid #6767C2;
@@ -426,7 +426,7 @@
   margin-top: 16px;
   width: 100%;
   padding: 16px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Barlow';
   resize: none;
   background: #E2E1DE;
