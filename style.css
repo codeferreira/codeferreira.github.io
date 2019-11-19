@@ -3,7 +3,7 @@
   color: #212123;
 }
 
-header nav {
+.web header {
   display: flex;
   padding: 24px 0;
   justify-content: center;
@@ -11,7 +11,7 @@ header nav {
   background: #212123;
 }
 
-.home {
+.web .home {
   padding: 32px;
   background-color: #212123;
   background-image: url(/assets/background.svg);
@@ -20,21 +20,21 @@ header nav {
   background-size: cover;
 }
 
-.code {
+.web .code {
   padding: 64px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mouse {
+.web .mouse {
   width: 30px;
   height: 50px;
   border: 2px solid #6767c2;
   border-radius: 20px;
 }
 
-.mouseDot {
+.web .mouseDot {
   margin: 6px auto;
   content: "";
   width: 7px;
@@ -56,21 +56,21 @@ header nav {
   }
 }
 
-.swipe {
+.web .swipe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.swipe p {
+.web .swipe p {
   margin-top: 16px;
   color: #6767C2;
   font-size: 20;
   font-weight: 500;
 }
 
-.about {
+.web .about {
   padding: 64px;
   max-width: 1080px;
   display: flex;
@@ -78,63 +78,63 @@ header nav {
   margin: auto;
 }
 
-.info h2 {
+.web .info h2 {
   font-size: 64px;
 }
 
-.info h3 {
+.web .info h3 {
   margin-top: 16px;
   font-size: 48px;
   font-weight: 500;
 }
 
-.info p {
+.web .info p {
   margin-top: 16px;
   font-size: 32px;
 }
 
-.info p span {
+.web .info p span {
   font-size: 24px;
 }
 
-.media {
+.web .media {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.media p {
+.web .media p {
   font-weight: 500;
   text-align: center;
 }
 
-.media a {
+.web .media a {
   margin-top: 16px;
 }
 
-.serviceBackground {
+.web .serviceBackground {
   background-color: #212123;
 } 
 
-.services {
+.web .services {
   padding: 64px;
   max-width: 1080px;
   margin: auto;
 }
 
-.services h2 {
+.web .services h2 {
   font-size: 64px;
   color: #FFF;
 }
 
-.servicesContent {
+.web .servicesContent {
   margin-top: 32px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.service {
+.web .service {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,43 +144,43 @@ header nav {
   color: #FFF;
 }
 
-.service div {
+.web .service div {
   height: 55px;
 }
 
-.serviceTitle {
+.web .serviceTitle {
   font-size: 32px;
   margin-bottom: 16px;
 }
 
-.serviceDescription {
+.web .serviceDescription {
   margin-top: 16px;
   align-self: baseline;
 }
 
-.contactForm {
+.web .contactForm {
   padding: 64px;
   max-width: 1080px;
   margin: auto;
 }
 
-.contactForm h2 {
+.web .contactForm h2 {
   font-size: 64px;
 }
 
-.contactForm form {
+.web .contactForm form {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
 }
 
-.contactForm .userInfo {
+.web .contactForm .userInfo {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
 
-input {
+.web input {
   padding: 16px; 
   width: 100%;
   background: #E2E1DE;
@@ -193,15 +193,15 @@ input {
   color: #A4A3Cf;
 }
 
-#name {
+.web #name {
   max-width: 320px;
 }
 
-#email {
+.web #email {
   margin-left: 32px;
 }
 
-#message {
+.web #message {
   width: 100%;
   padding: 16px;
   font-size: 24px;
@@ -213,7 +213,7 @@ input {
   color: #6767C2;
 }
 
-.contactForm form button{
+.web .contactForm form button{
   margin: 32px auto 0 auto;
   border: none;
   border-radius: 3px;
@@ -224,7 +224,222 @@ input {
 }
 
 @media only screen and (max-device-width: 750px) {
-  .container {
+  .web {
     display: none;
   }
+  .mobile {
+    display: inherit;
+  }
+}
+
+.mobile header {
+  display: flex;
+  padding: 24px 0;
+  justify-content: center;
+  align-items: center;
+  background: #212123;
+}
+
+.mobile header img {
+  max-width: 160px;
+}
+
+.mobile .home {
+  padding: 32px;
+  background-color: #212123;
+  background-image: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile .home img {
+  max-width: 250px;
+}
+
+.mobile .code {
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile .mouse {
+  width: 25px;
+  height: 45px;
+  border: 2px solid #6767c2;
+  border-radius: 20px;
+}
+
+.mobile .mouseDot {
+  margin: 6px auto;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  background: #6767c2;
+  opacity: 1;
+  animation: mouseDot 2s infinite;
+}
+
+.mobile .swipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile .swipe p {
+  margin-top: 16px;
+  color: #6767C2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mobile .about {
+  padding: 32px;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.mobile .info h2 {
+  font-size: 64px;
+}
+
+.mobile .info h3 {
+  margin-top: 16px;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.mobile .info p {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.mobile .info p span {
+  font-size: 22px;
+}
+
+.mobile .media {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile .mediaImgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mobile .media p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.mobile .media a {
+  margin: 16px 16px 0 16px;
+}
+
+.mobile .serviceBackground {
+  background-color: #212123;
+} 
+
+.mobile .services {
+  padding: 32px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.mobile .services h2 {
+  font-size: 64px;
+  color: #FFF;
+}
+
+.mobile .servicesContent {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 320px;
+  padding: 24px;
+  color: #FFF;
+}
+
+.mobile .service div {
+  height: 55px;
+}
+
+.mobile .serviceTitle {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.mobile .serviceDescription {
+  margin-top: 16px;
+  align-self: baseline;
+}
+
+.mobile .contactForm {
+  padding: 32px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.mobile .contactForm h2 {
+  font-size: 64px;
+}
+
+.mobile .contactForm form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile input {
+  padding: 16px; 
+  width: 100%;
+  background: #E2E1DE;
+  border: 2px solid #6767C2;
+  border-radius: 3px;
+  color: #6767C2;
+  margin-top: 16px;
+}
+
+::placeholder {
+  color: #A4A3Cf;
+}
+
+.mobile #message {
+  margin-top: 16px;
+  width: 100%;
+  padding: 16px;
+  font-size: 24px;
+  font-family: 'Barlow';
+  resize: none;
+  background: #E2E1DE;
+  border: 2px solid #6767C2;
+  border-radius: 3px;
+  color: #6767C2;
+}
+
+.mobile .contactForm form button{
+  margin: 32px auto 0 auto;
+  border: none;
+  border-radius: 3px;
+  padding: 16px;
+  background: #4646A9;
+  color: #FFF;
+  font-weight: 700;
 }
