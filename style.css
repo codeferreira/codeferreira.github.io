@@ -14,6 +14,10 @@ header nav {
 .home {
   padding: 32px;
   background-color: #212123;
+  background-image: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .code {
@@ -23,12 +27,40 @@ header nav {
   align-items: center;
 }
 
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 2px solid #6767c2;
+  border-radius: 20px;
+}
+
+.mouseDot {
+  margin: 6px auto;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background: #6767c2;
+  opacity: 1;
+  animation: mouseDot 2s infinite;
+}
+
+@keyframes mouseDot {
+  from {
+    opacity: 1;
+    margin: 6px auto;
+  }
+  to {
+    opacity: 0;
+    margin: 33px auto;
+  }
+}
+
 .swipe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
 }
 
 .swipe p {
