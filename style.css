@@ -422,7 +422,7 @@
   color: #A4A3Cf;
 }
 
-.mobile #message {
+.mobile .message {
   margin-top: 16px;
   width: 100%;
   padding: 16px;
