@@ -184,9 +184,10 @@
   padding: 16px; 
   width: 100%;
   background: #E2E1DE;
-  border: 2px solid #6767C2;
+  border: 2px solid #A4A3Cf;
   border-radius: 3px;
   color: #6767C2;
+  transition: border-color 0.8s;
 }
 
 ::placeholder {
@@ -208,9 +209,10 @@
   font-family: 'Barlow';
   resize: none;
   background: #E2E1DE;
-  border: 2px solid #6767C2;
+  border: 2px solid #A4A3Cf;
   border-radius: 3px;
   color: #6767C2;
+  transition: border-color 0.8s;
 }
 
 .web .contactForm form button{
@@ -221,6 +223,18 @@
   background: #4646A9;
   color: #FFF;
   font-weight: 700;
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.web .contactForm form button:hover {
+  background: #6767c2 radial-gradient(circle, transparent 1%, #6767c2 1%) center/15000%;
+}
+
+.web .contactForm form button:active {
+  background-color: #A4A3Cf;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 @media only screen and (max-device-width: 750px) {
@@ -421,7 +435,7 @@
   font-size: 20px;
   width: 100%;
   background: #E2E1DE;
-  border: 2px solid #6767C2;
+  border: 2px solid #A4A3Cf;
   border-radius: 3px;
   color: #6767C2;
   margin-top: 16px;
@@ -439,7 +453,7 @@
   font-family: 'Barlow';
   resize: none;
   background: #E2E1DE;
-  border: 2px solid #6767C2;
+  border: 2px solid #A4A3Cf;
   border-radius: 3px;
   color: #6767C2;
 }
@@ -452,4 +466,28 @@
   background: #4646A9;
   color: #FFF;
   font-weight: 700;
+  background-position: center;
+  transition: background 08.s;
+}
+
+.mobile .contactForm form button:hover {
+  background: #6767c2 radial-gradient(circle, transparent 1%, #6767c2 1%) center/15000%;
+}
+
+.mobile .contactForm form button:active {
+  background-color: #A4A3Cf;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+input:focus {
+  border-color: #6767C2;
+}
+
+#message:focus {
+  border-color: #6767C2;
+}
+
+.message:focus {
+  border-color: #6767C2;
 }
